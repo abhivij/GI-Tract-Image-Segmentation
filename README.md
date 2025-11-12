@@ -1,7 +1,43 @@
-# GI-Tract-Image-Segmentation
-
-UW-Madison GI Tract Image Segmentation
-
+# GI Tract Image Segmentation
 Track healthy organs in medical scans to improve cancer treatment
 
-https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation
+![header](https://github.com/user-attachments/assets/a6d018ab-db46-4942-a807-a5020771e850)
+
+<p align="right"><sub><i>Image source: <a href="https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation">UW-Madison GI Tract Image Segmentation Competition</a></i></sub></p>
+
+-------------------------------------------------------------------------------------------------------
+
+**📝 Task** : Predict semantic segmentation masks for large bowel, small bowel, and stomach across multiple MRI scan slices — identified by case, day, and slice ids.
+
+**📊 Evaluation metric** : Combined metric = 0.6 * 3D Hausdorff Distance + 0.4 * Dice Score
+
+ℹ️ Please refer to https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation for more details
+
+-------------------------------------------------------------------------------------------------------
+🧠 **Model Overview**
+- Architecture: SegFormer with mit-b1 encoder
+- Classification (presence) head to handle empty masks
+- Loss = (Dice + SoftBCE) for segmentation + BCE for presence head
+- Used 2.5D input slices to obtain inter-slice context
+- EMA (Exponential Moving Average) weights for final evaluation
+  
+-------------------------------------------------------------------------------------------------------
+
+📈 **Best Score (Combined metric)**
+- Private score (~ 51% of test data) : 0.8503 (EMA model) 
+- Public score  (~ 49% of test data) : 0.8584 (EMA model) 
+- Validation score             : 0.853
+  
+  (validation data obtained using 80-20 split of train data ensuring equal proportion of empty segmentation mask and non-overlapping case ids)
+
+-------------------------------------------------------------------------------------------------------
+
+**Main contents**
+- [GI Tract Image Segmentation notebook](https://github.com/abhivij/GI-Tract-Image-Segmentation/blob/main/gi-tract-image-segmentation.ipynb)
+  (The ipython notebook contains images and other details, so please reload in case it does not render properly. Alternatively view the code on Kaggle in the link below)
+- [Scores of all runs](https://github.com/abhivij/GI-Tract-Image-Segmentation/blob/main/Scores.xlsx)
+
+-------------------------------------------------------------------------------------------------------
+
+The notebook provided here can be directly accessed and run from :
+- [Kaggle - GI Tract Image Segmentation](https://www.kaggle.com/code/abhivij/gi-tract-image-segmentation)
