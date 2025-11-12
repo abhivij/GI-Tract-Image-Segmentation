@@ -6,7 +6,7 @@
 
 -------------------------------------------------------------------------------------------------------
 
-**📝 Task** : Predict semantic segmentation masks for large bowel, small bowel, and stomach across multiple MRI scan slices — identified by case, day, and slice ids.
+**📝 Task** : Predict semantic segmentation masks for large bowel, small bowel and stomach across multiple MRI scan slices — identified by case, day, and slice ids.
 
 **📊 Evaluation metric** : Combined metric = 0.6 * 3D Hausdorff Distance + 0.4 * Dice Score
 
