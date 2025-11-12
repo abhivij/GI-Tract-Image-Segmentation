@@ -23,11 +23,9 @@
 -------------------------------------------------------------------------------------------------------
 
 📈 **Best Score (Combined metric)**
-- Private score (~ 51% of test data) : 0.8503 (EMA model) 
-- Public score  (~ 49% of test data) : 0.8584 (EMA model) 
-- Validation score             : 0.853
-  
-  (validation data obtained using 80-20 split of train data ensuring equal proportion of empty segmentation mask and non-overlapping case ids)
+- Private score : 0.8503 (~ 51% of test data)
+- Public score  : 0.8584 (~ 49% of test data) 
+- Validation score : 0.853 (validation data obtained using 80-20 split of train data ensuring equal proportion of empty segmentation mask and non-overlapping case ids)
 
 -------------------------------------------------------------------------------------------------------
 
