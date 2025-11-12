@@ -1,5 +1,4 @@
 # GI Tract Image Segmentation
-Track healthy organs in medical scans to improve cancer treatment
 
 ![header](https://github.com/user-attachments/assets/a6d018ab-db46-4942-a807-a5020771e850)
 
