@@ -25,7 +25,7 @@
 
 -------------------------------------------------------------------------------------------------------
 
-🔧 **Implementation** : Built in Python mainly using PyTorch, Segmentation Models PyTorch (SMP), OpenCV
+🔨 **Implementation** : Built in Python mainly using PyTorch, Segmentation Models PyTorch (SMP), OpenCV
 
 -------------------------------------------------------------------------------------------------------
 
