@@ -13,13 +13,16 @@
 ℹ️ Please refer to https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation for more details
 
 -------------------------------------------------------------------------------------------------------
-🧠 **Model Overview**
-- Architecture: SegFormer with mit-b1 encoder
-- Classification (presence) head to handle empty masks
-- Loss = (Dice + SoftBCE) for segmentation + BCE for presence head
-- Used 2.5D input slices to obtain inter-slice context
-- EMA (Exponential Moving Average) weights for final evaluation
-  
+
+🧠 **Methodology**
+
+- Model Architecture : SegFormer with mit-b1 encoder
+  * Classification (presence) head to handle empty masks
+- Loss : (Dice + SoftBCE) for segmentation + BCE for presence head
+- Input : Used 2.5D image slices to obtain inter-slice context
+- Data coherence : Ensured that all slices from the same case-day receive identical augmentations to maintain 3D consistency
+- Stabilization : EMA (Exponential Moving Average) weights for final evaluation
+
 -------------------------------------------------------------------------------------------------------
 
 📈 **Best Score (Combined metric)**
