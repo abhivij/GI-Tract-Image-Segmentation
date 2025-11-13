@@ -25,6 +25,10 @@
 
 -------------------------------------------------------------------------------------------------------
 
+🔧 **Implementation** : Built in Python mainly using PyTorch, Segmentation Models PyTorch (SMP), OpenCV
+
+-------------------------------------------------------------------------------------------------------
+
 📈 **Best Score (Combined metric)**
 - Private score : 0.8503 (~ 51% of test data)
 - Public score  : 0.8584 (~ 49% of test data) 
