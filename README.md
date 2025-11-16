@@ -30,9 +30,9 @@
 -------------------------------------------------------------------------------------------------------
 
 📈 **Best Score (Combined metric)**
-- Private score : 0.8503 (~ 51% of test data)
-- Public score  : 0.8584 (~ 49% of test data) 
-- Validation score : 0.853 (validation data obtained using 80-20 split of train data ensuring equal proportion of empty segmentation mask and non-overlapping case ids)
+- Private score : 0.8517 (~ 51% of test data)
+- Public score  : 0.8606 (~ 49% of test data) 
+- Validation score : 0.858 (validation data obtained using 80-20 split of train data ensuring equal proportion of empty segmentation mask and non-overlapping case ids)
 
 -------------------------------------------------------------------------------------------------------
 
