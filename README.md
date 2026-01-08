@@ -31,8 +31,8 @@
 -------------------------------------------------------------------------------------------------------
 
 📈 **Best Score (Combined metric)**
-- Private score : 0.86162 (~ 51% of test data)
-- Public score  : 0.86619 (~ 49% of test data) 
+- Private score : 0.86248 (~ 51% of test data)
+- Public score  : 0.87178 (~ 49% of test data) 
 - Validation score : 0.87192 (validation data obtained using 80-20 split of train data ensuring equal proportion of empty segmentation mask and non-overlapping case ids)
    - 3D Hausdorff Distance : 0.046
    - Dice Score : 0.748
