@@ -19,7 +19,7 @@
 - Model Architecture : SegFormer with mit-b4 encoder
   * Classification (presence) head to handle empty masks
 - Loss : (Dice + SoftBCE) for segmentation + BCE for presence head
-- Input : Used 2.5D image slices to obtain inter-slice context
+- Input : Used 2.5D images(5 slices) to obtain inter-slice context
 - Data coherence : Ensured that all slices from the same case-day receive identical augmentations to maintain 3D consistency
 - Optimization : Layer-wise learning rate decay (LLRD) applied across SegFormer encoder blocks, decoder and task heads
 - Stabilization : EMA (Exponential Moving Average) weights for final evaluation
@@ -31,11 +31,11 @@
 -------------------------------------------------------------------------------------------------------
 
 📈 **Best Score (Combined metric)**
-- Private score : 0.86248 (~ 51% of test data)
-- Public score  : 0.87178 (~ 49% of test data) 
-- Validation score : 0.87192 (validation data obtained using 80-20 split of train data ensuring equal proportion of empty segmentation mask and non-overlapping case ids)
-   - 3D Hausdorff Distance : 0.046
-   - Dice Score : 0.748
+- Private score : 0.86701 (~ 51% of test data)
+- Public score  : 0.87427 (~ 49% of test data) 
+- Validation score : 0.87303 (validation data obtained using 80-20 split of train data ensuring equal proportion of empty segmentation mask and non-overlapping case ids)
+   - 3D Hausdorff Distance : 0.04574
+   - Dice Score : 0.75118
 
 -------------------------------------------------------------------------------------------------------
 
